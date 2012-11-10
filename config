@@ -12,7 +12,7 @@
 set $mod Mod1
 
 # USE UBUNTU FONT
-font xft:Ubuntu 20
+font xft:Ubuntu bold 10
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -31,9 +31,9 @@ bindsym $mod+l          focus up
 bindsym $mod+odiaeresis focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
+bindsym $mod+Left  focus left
+bindsym $mod+Down  focus down
+bindsym $mod+Up    focus up
 bindsym $mod+Right focus right
 
 # move focused window
@@ -65,8 +65,8 @@ bindsym $mod+e layout default
 # change focus between tiling / floating windows
 
 # focus the parent container
-bindsym  $mod+a focus parent
-bindcode $mod+d focus child
+bindsym $mod+a focus parent
+bindsym $mod+d focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -79,6 +79,16 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+Mod3+1 workspace 11
+bindsym $mod+Mod3+2 workspace 12
+bindsym $mod+Mod3+3 workspace 13
+bindsym $mod+Mod3+4 workspace 14
+bindsym $mod+Mod3+5 workspace 15
+bindsym $mod+Mod3+6 workspace 16
+bindsym $mod+Mod3+7 workspace 17
+bindsym $mod+Mod3+8 workspace 18
+bindsym $mod+Mod3+9 workspace 19
+bindsym $mod+Mod3+0 workspace 20
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam     move workspace 1
@@ -91,6 +101,16 @@ bindsym $mod+Shift+slash      move workspace 7
 bindsym $mod+Shift+parenleft  move workspace 8
 bindsym $mod+Shift+parenright move workspace 9
 bindsym $mod+Shift+equal      move workspace 10
+bindsym $mod+Shift+Mod3+exclam     move workspace 11
+bindsym $mod+Shift+Mod3+quotedbl   move workspace 12
+bindsym $mod+Shift+Mod3+section    move workspace 13
+bindsym $mod+Shift+Mod3+dollar     move workspace 14
+bindsym $mod+Shift+Mod3+percent    move workspace 15
+bindsym $mod+Shift+Mod3+ampersand  move workspace 16
+bindsym $mod+Shift+Mod3+slash      move workspace 17
+bindsym $mod+Shift+Mod3+parenleft  move workspace 18
+bindsym $mod+Shift+Mod3+parenright move workspace 19
+bindsym $mod+Shift+Mod3+equal      move workspace 20
 
 # reload the configuration file
 bindsym $mod+Shift+R reload
@@ -130,5 +150,15 @@ bindsym Escape mode "default"
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# WORKSPACE ALLOCATION
+default_orientation horizontal
+workspace_layout    default
+hide_edge_borders   both
+focus_follows_mouse no
+popup_during_fullscreen leave_fullscreen
+
+# class                 border  backgr. text    indicator
+client.focused          #4c7899 #285577 #ffffff #2e9ef5
+client.focused_inactive #333333 #5f676a #ffffff #484e50
+client.unfocused        #333333 #222222 #888888 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
