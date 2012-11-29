@@ -196,9 +196,9 @@ assign [title="ncmpcpp"] 6: musici
 assign [class="hothot|twitter|app.net"] 7: twitter
 
 bar {
-    status_command i3status --config i3status.conf
+    status_command i3status --config ~/.i3/i3status.conf
     position bottom
     tray_output primary
     mode hide
     modifier $mod
-q   
+}
