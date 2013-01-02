@@ -9,18 +9,18 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# Startup
 set $mod Mod1
 
 # USE UBUNTU FONT
 font xft:Ubuntu bold 10
 
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return     exec gnome-terminal
-bindsym $mod+Shift+Esc  exec xkill
+bindsym $mod+Return     exec urxvt
+bindsym $mod+Esc        exec xkill
 
 # kill focused window
 bindsym $mod+Shift+C    kill
