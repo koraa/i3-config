@@ -163,7 +163,8 @@ popup_during_fullscreen leave_fullscreen
 # Screenswitch
 bindsym $mod+x move workspace to output right
 bindsym $mod+Shift+x move container to output right
-
+bindsym $mod+y move workspace to output up
+bindsym $mod+Shift+y move container to output up
 
 # class                 border  backgr. text    indicator
 client.focused          #4c7899 #285577 #ffffff #2e9ef5
