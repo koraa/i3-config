@@ -18,9 +18,9 @@ font xft:Ubuntu bold 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return     exec urxvt
-bindsym $mod+Esc        exec xkill
+# start a terminal  => Third pty
+#bindsym $mod+Return     exec urxvtc
+#bindsym $mod+Escape     exec xkill
 
 # kill focused window
 bindsym $mod+Shift+C    kill
@@ -176,25 +176,23 @@ client.urgent           #2f343a #900000 #ffffff #900000
 for_window [class="."] border 1pixel
 
 for_window [class="Tilda"]   floating enable; border 1pixel
-
 for_window [class="Synapse"] border none
 
 for_window [class="Vlc"]     fullscreen
 
 for_window [class="Software-center"] floating enable
-
 for_window [class="^\.$"] floating enable
 
 for_window [title="XNOTE"] floating enable; move right; move down; border 1pixel: resize shrink height 0 px or 30 ppt
 
 # Workspac
 
-assign [class="chrom|firefox|navigator"] 1: www
-assign [class="skype|pidgin"]            3: mesg
+assign [class="[Cc]hrom(ium)?|firefox|navigator"] 1: www
+assign [class="skype|[Pp]idgin"]            3: mesg
 assign [class="thunderbird|mail|rss|atom|lifera"] 4: mail
 assign [title="irssi"] 5: irc
 assign [title="ncmpcpp"] 6: musici
-assign [class="hothot|twitter|app.net"] 7: twitter
+assign [class="[Hh]othot(.*[Gg][Tt][Kk].3)?|twitter|app.net"] 7: twitter
 
 bar {
     status_command i3status --config ~/.i3/i3status.conf
