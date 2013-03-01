@@ -185,6 +185,8 @@ for_window [class="^\.$"] floating enable
 
 for_window [title="XNOTE"] floating enable; move right; move down; border 1pixel: resize shrink height 0 px or 30 ppt
 
+for_window [title="most"] floating enable
+
 # Workspac
 
 assign [class="[Cc]hrom(ium)?|firefox|navigator"] 1: www
