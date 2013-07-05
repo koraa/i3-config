@@ -202,7 +202,7 @@ assign [class="[Cc]hrom(ium)?|firefox|navigator"] 1: www
 assign [class="skype|[Pp]idgin"]            3: mesg
 assign [class="thunderbird|mail|rss|atom|lifera"] 4: mail
 assign [title="irssi"] 5: irc
-assign [title="ncmpcpp"] 6: musici
+assign [title="ncmpcpp"] 6: music
 assign [class="[Hh]othot(.*[Gg][Tt][Kk].3)?|twitter|app.net"] 7: twitter
 
 bar {
