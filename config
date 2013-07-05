@@ -167,6 +167,12 @@ bindsym $mod+Shift+x move container to output right
 bindsym $mod+y move workspace to output up
 bindsym $mod+Shift+y move container to output up
 
+# Scratchpad
+bindsym $mod+u scratchpad show
+bindsym $mod+z move scratchpad
+
+bindsym $mod+less [title="^dropin-term$"] scratchpad show
+
 # class                 border  backgr. text    indicator
 client.focused          #4c7899 #285577 #ffffff #2e9ef5
 client.focused_inactive #333333 #5f676a #ffffff #484e50
@@ -187,6 +193,8 @@ for_window [class="^\.$"] floating enable
 for_window [title="XNOTE"] floating enable; move right; move down; border 1pixel: resize shrink height 0 px or 30 ppt
 
 for_window [title="most"] floating enable
+
+for_window [title="^dropin-term$"] move scratchpad
 
 # Workspac
 
