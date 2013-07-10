@@ -174,9 +174,9 @@ bindsym $mod+z move scratchpad
 bindsym $mod+less [title="^dropin-term$"] scratchpad show
 
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #285577 #ffffff #2e9ef5
-client.focused_inactive #333333 #5f676a #ffffff #484e50
-client.unfocused        #333333 #222222 #888888 #292d2e
+client.focused          #333344 #111111 #ffffff #2e9ef5
+client.focused_inactive #222222 #030303 #dddddd #484e50
+client.unfocused        #222222 #030303 #999999 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
 # HOOK
