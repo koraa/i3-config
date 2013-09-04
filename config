@@ -79,7 +79,7 @@ bindsym $mod+3 workspace 3: mesg
 bindsym $mod+4 workspace 4: mail
 bindsym $mod+5 workspace 5: irc
 bindsym $mod+6 workspace 6: music
-bindsym $mod+7 workspace 7: twitter
+bindsym $mod+7 workspace 7: boheme
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
@@ -101,7 +101,7 @@ bindsym $mod+Shift+section    move workspace 3: mesg
 bindsym $mod+Shift+dollar     move workspace 4: mail
 bindsym $mod+Shift+percent    move workspace 5: irc
 bindsym $mod+Shift+ampersand  move workspace 6: music
-bindsym $mod+Shift+slash      move workspace 7: twitter
+bindsym $mod+Shift+slash      move workspace 7: boheme
 bindsym $mod+Shift+parenleft  move workspace 8
 bindsym $mod+Shift+parenright move workspace 9
 bindsym $mod+Shift+equal      move workspace 10
@@ -203,7 +203,8 @@ assign [class="skype|[Pp]idgin"]            3: mesg
 assign [class="thunderbird|mail|rss|atom|lifera"] 4: mail
 assign [title="irssi"] 5: irc
 assign [title="ncmpcpp"] 6: music
-assign [class="[Hh]othot(.*[Gg][Tt][Kk].3)?|twitter|app.net"] 7: twitter
+assign [class="[Hh]othot(.*[Gg][Tt][Kk].3)?|twitter|app.net"] 7: boheme
+assign [title="alpha\.app\.net|buttercupfestival\.com"] 7: boheme
 
 bar {
     status_command i3status --config ~/.i3/i3status.conf
